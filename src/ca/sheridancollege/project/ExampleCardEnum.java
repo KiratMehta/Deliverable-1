@@ -22,6 +22,11 @@ public class ExampleCardEnum {
         {
             System.out.println(s.getS() +" "+ s.getVal());
         }
+        for(Cards s1:ch.generate)
+        {
+            System.out.println(s1.getS1() +" "+ s1.getVal());
+        }
+        
     }
     
 }

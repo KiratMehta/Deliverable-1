@@ -11,8 +11,8 @@ package ca.sheridancollege.project;
  */
 public class GenerateCard 
 {
-        int deck=56;
-        Cards generate[] = new Cards[deck];   //52 cards
+        int deck=26;
+        Cards generate[] = new Cards[deck];   //26 cards
     public void generateCard()
     {
         int counter=0;
@@ -21,6 +21,18 @@ public class GenerateCard
             for(Cards.Value v: Cards.Value.values())
             {
                 generate[counter] = new Cards(s,v); //object address is stored in arrsay
+                counter++;
+            }
+        }
+    }
+     public void generateCard1()
+    {
+        int counter=0;
+        for( Cards.Suit1 s1: Cards.Suit1.values())//enhanced for loop - index value not needed
+        {
+            for(Cards.Value v: Cards.Value.values())
+            {
+                generate[counter] = new Cards(s1,v); //object address is stored in arrsay
                 counter++;
             }
         }
