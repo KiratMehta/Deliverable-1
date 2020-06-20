@@ -25,16 +25,19 @@ public class GenerateCard
             }
         }
     }
+    Card2 generate2[]=new Card2[deck];
      public void generateCard1()
     {
+        
         int counter=0;
-        for( Cards.Suit1 s1: Cards.Suit1.values())//enhanced for loop - index value not needed
+        for( Card2.Suit1 s1: Card2.Suit1.values())//enhanced for loop - index value not needed
         {
-            for(Cards.Value v: Cards.Value.values())
+            for(Card2.Value1 v1: Card2.Value1.values())
             {
-                generate[counter] = new Cards(s1,v); //object address is stored in arrsay
+                generate2[counter] = new Card2(s1,v1); //object address is stored in arrsay
                 counter++;
             }
         }
     }
+    
 }

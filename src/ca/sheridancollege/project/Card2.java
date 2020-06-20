@@ -1,26 +1,56 @@
-/**
- * SYST 17796 Project Winter 2020 Base code.
- * Students can modify and extend to implement their game.
- * Add your name as a modifier and the date!
- */
+
+
 package ca.sheridancollege.project;
 
-/**
- * A class to be used as the base Card class for the project. Must be general
- * enough to be instantiated for any Card game. Students wishing to add to the code 
- * should remember to add themselves as a modifier.
- * @author Sivagama
- */
-public abstract class Card2 
-{
-    //default modifier for child classes
-    
+public class Card2{
+
+    Card2(Suit1 s1, Cards.Value v1) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+      public enum Suit1 {clubs,spades};
+    public enum Value1
+    {
+        ACE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,
+        EIGHT,NINE,TEN,JACK,QUEEN,KING    
+    };
+     private Suit1 s1;    
+    private Value1 val;
+    public Card2(Suit1 s1,Value1 v1)
+    {
+        setS1(s1);
+        setVal(v1);
+    }
+
     /**
-     * Students should implement this method for their specific children classes 
-     * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
+     * @return the s1
      */
+    public Suit1 getS1() {
+        return s1;
+    }
+
+    /**
+     * @param s1 the s1 to set
+     */
+    public void setS1(Suit1 s1) {
+        this.s1 = s1;
+    }
+
+    /**
+     * @return the val
+     */
+    public Value1 getVal() {
+        return val;
+    }
+
+    /**
+     * @param val the val to set
+     */
+    public void setVal(Value1 val) {
+        this.val = val;
+    }
     
-    @Override
-    public abstract String toString();
-        //COMMENT BY GURJIT
+    public String toString(){
+        return s1+" "+val;
+    } 
 }
