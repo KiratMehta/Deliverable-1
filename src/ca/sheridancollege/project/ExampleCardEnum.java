@@ -63,11 +63,15 @@ public class ExampleCardEnum {
             if (ran > ran2) {
                 System.out.println("PLAYER 1 won");
                 player1Score = player1Score + 1;
-            } else {
+            } 
+            else if(ran==ran2){
+                System.out.println("Draw");
+            }
+            else {
                 System.out.println("PLAYER 2 won");
                 player2Score = player2Score + 1;
             }
-            System.out.println("Do you want to contniue: ");
+            System.out.println("Do you want to contniue: (if yes press y)");
             check = scan.next().charAt(0);
             System.out.println();
         } while (check == 'y' || check == 'Y');
