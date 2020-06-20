@@ -1,3 +1,10 @@
+
+/*
+ * Group: Kirat Mehta, Gurjit Singh, Jagdeep Singh, Parminder Kaur Puri
+ * 1205_11047 - Fundamentals of Software Design and Development
+ * Project name :- Card Game
+ * Date June 2020
+ */
 package ca.sheridancollege.project;
 
 import java.util.Scanner;
@@ -10,9 +17,9 @@ public class ExampleCardEnum {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        char check;
-        int ran = 0;
-        int ran2 = 0;
+        char check;               // intitalization of check
+        int ran = 0;              // declare ran 0
+        int ran2 = 0;             // declare ran2 0
 
         int player1Score = 0;
         int player2Score = 0;

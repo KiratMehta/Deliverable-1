@@ -1,14 +1,11 @@
 /*
- * Gurjit Singh
- * Student ID: 991592634
- * SYST!10199 - Web Programming
+ * Group: Kirat Mehta, Gurjit Singh, Jagdeep Singh, Parminder Kaur Puri
+ * 1205_11047 - Fundamentals of Software Design and Development
+ * Project name :- Card Game
+ * Date June 2020
  */
 package ca.sheridancollege.project;
 
-/**
- *
- * @author Gurjit
- */
 public class GenerateCard 
 {
         int deck=26;
