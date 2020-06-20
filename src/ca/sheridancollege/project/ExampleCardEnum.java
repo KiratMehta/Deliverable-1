@@ -59,18 +59,51 @@ public class ExampleCardEnum {
                 System.out.println("If Player 1 doesn't want to continue, The game has ended");
                 break;
             }
-
-            if (ran > ran2) {
-                System.out.println("PLAYER 1 won");
-                player1Score = player1Score + 1;
-            } 
+                
+            if(ran<13&&ran2<13 || ran>=13&&ran2>=13)
+            {
+               if (ran > ran2) {
+                    System.out.println("ran="+ran);
+                    System.out.println("ran2="+ran2);
+                    System.out.println("PLAYER 1 won");
+                    player1Score = player1Score + 1;
+                } 
             else if(ran==ran2){
+                System.out.println("ran="+ran);
+                System.out.println("ran2="+ran2);
                 System.out.println("Draw");
+                }
+                else {
+                    System.out.println("ran="+ran);
+                    System.out.println("ran2="+ran2);
+                    System.out.println("PLAYER 2 won");
+                    player2Score = player2Score + 1;
+                }
             }
-            else {
-                System.out.println("PLAYER 2 won");
-                player2Score = player2Score + 1;
-            }
+            else if(ran<13&&ran2>=13 || ran>=13&&ran2<13)
+            {
+                if(ran2>ran)
+                    ran2=ran2-13;
+                else
+                    ran=ran-13;
+                if (ran > ran2) {
+                    System.out.println("ran="+ran);
+                    System.out.println("ran2="+ran2);
+                    System.out.println("PLAYER 1 won");
+                    player1Score = player1Score + 1;
+                } 
+            else if(ran==ran2){
+                System.out.println("ran="+ran);
+                System.out.println("ran2="+ran2);
+                System.out.println("Draw");
+                }
+                else {
+                    System.out.println("ran="+ran);
+                    System.out.println("ran2="+ran2);
+                    System.out.println("PLAYER 2 won");
+                    player2Score = player2Score + 1;
+                }
+            }            
             System.out.println("Do you want to contniue: (if yes press y)");
             check = scan.next().charAt(0);
             System.out.println();
