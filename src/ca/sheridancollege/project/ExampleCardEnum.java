@@ -41,6 +41,7 @@ public class ExampleCardEnum {
             if (play == 1) {
                 ran = (int) (Math.random() * 26);
                 System.out.println("PLAYER 1 cards: " + ch.generate[ran]);
+                System.out.println(ran);
             }
             else{
                 System.out.println("Player 1 doesn't want to continue, The game has ended");
@@ -52,7 +53,10 @@ public class ExampleCardEnum {
 
             if (play2 == 1) {
                 ran2 = (int) (Math.random() * 26);
+               
                 System.out.println("PLAYER 2 cards: " + ch2.generate2[ran2]);
+                Card2 x=ch2.generate2[ran2];
+                System.out.println(x);
 
             }
             else{

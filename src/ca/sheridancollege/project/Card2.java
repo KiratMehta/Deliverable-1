@@ -4,9 +4,7 @@ package ca.sheridancollege.project;
 
 public class Card2{
 
-    Card2(Suit1 s1, Cards.Value v1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
 
       public enum Suit1 {clubs,spades};
     public enum Value1
