@@ -34,6 +34,8 @@ public class ExampleCardEnum {
             System.out.println("----INSTRUCTIONS----");
             System.out.println("Two players have been given equal amount of cards ");
             System.out.println("The player with the greatest card wins");
+            System.out.println("Players will pick a random card from their deck");
+            
             System.out.println();
 
             System.out.println("If Player 1 wants to register and play press 1 ");
