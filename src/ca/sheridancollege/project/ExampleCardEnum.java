@@ -31,12 +31,12 @@ public class ExampleCardEnum {
         ch2.generateCard1();
 
         do {
-            System.out.println("----INSTRUCTIONS----");
-            System.out.println("Two players have been given equal amount of cards ");
-            System.out.println("The player with the greatest card wins");
-            System.out.println("Players will pick a random card from their deck");
+            System.out.println("Do you want to view INSTRUCTIONS (if yes press 1 else any other number to continue)");
+            int instruct=scan.nextInt();
             
-            System.out.println();
+            
+            if(instruct==1)
+            System.out.println(ch.Instructions());
 
             System.out.println("If Player 1 wants to register and play press 1 ");
             int play = scan.nextInt();

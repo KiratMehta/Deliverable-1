@@ -6,10 +6,11 @@
  */
 package ca.sheridancollege.project;
 
-public class GenerateCard 
+public class GenerateCard extends Generate
 {
         int deck=26;
         Cards generate[] = new Cards[deck];   //26 cards
+        @Override
     public void generateCard()
     {
         int counter=0;
@@ -23,6 +24,7 @@ public class GenerateCard
         }
     }
     Card2 generate2[]=new Card2[deck];
+        @Override
      public void generateCard1()
     {
         
@@ -35,6 +37,15 @@ public class GenerateCard
                 counter++;
             }
         }
+    }
+
+        @Override
+    public String Instructions(){
+        
+        return "----INSTRUCTIONS----\n"+"Two players have been given equal amount of cards\n"+
+                "The player with the greatest card wins\n"+"Players will pick a random card from their deck\n";
+        
+        
     }
     
 }
