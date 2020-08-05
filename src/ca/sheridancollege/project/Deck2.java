@@ -7,7 +7,7 @@
 
 package ca.sheridancollege.project;
 
-public class Card2{
+public class Deck2{
 
    
 
@@ -19,7 +19,7 @@ public class Card2{
     };
      private Suit1 s1;    
     private Value1 val;
-    public Card2(Suit1 s1,Value1 v1)
+    public Deck2(Suit1 s1,Value1 v1)
     {
         setS1(s1);
         setVal(v1);

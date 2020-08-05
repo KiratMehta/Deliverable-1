@@ -9,7 +9,7 @@
 package ca.sheridancollege.project;
 
 
-public class Cards {
+public class Deck1 {
     //public enum Directions{East,west,north,south};
     public enum Suit {hearts,diamonds};//predefined set of constants, userdefined data type
     
@@ -21,7 +21,7 @@ public class Cards {
     private Suit s;    
    
     private Value val;
-    public Cards(Suit s,Value v)
+    public Deck1(Suit s,Value v)
     {
         setS(s);
         setVal(v);

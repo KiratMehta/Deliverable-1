@@ -10,7 +10,7 @@ package ca.sheridancollege.project;
 
 import java.util.Scanner;
 
-public class ExampleCardEnum {
+public class War {
 
     /**
      * @param args the command line arguments
@@ -31,11 +31,23 @@ public class ExampleCardEnum {
         GenerateCard ch2 = new GenerateCard();
         ch2.generateCard1();
         
-        System.out.println("Register the players\nEnter Player1 name:");
-       String P1 = scan.nextLine();
+        Register reg=new Register();
+        
+       System.out.println("Register the players\nEnter Player1 name:");
+       String Pl1 = scan.nextLine();
+       reg.setPlayer1Name(Pl1);
 
        System.out.println("Enter Player2 name:");
-       String P2 = scan.nextLine();
+       String Pl2 = scan.nextLine();
+       reg.setPlayer2Name(Pl2);
+       
+       String P1=reg.getPlayer1Name();
+       String P2=reg.getPlayer2Name();
+       
+        System.out.println("Player 1 Name: "+P1+", Player 1 ID: "+reg.getPlayer1ID());
+        System.out.println("Player 2 Name: "+P2+", Player 2 ID: "+reg.getPlayer2ID());
+        
+       
        System.out.println("Do you want to view INSTRUCTIONS (if yes press 1 else any other number to continue)");
             int instruct=scan.nextInt();                        
         do {            
@@ -55,7 +67,7 @@ public class ExampleCardEnum {
             }
             System.out.println(P2+"'s chance! To pick a card press 1 or any other number to end game");
 
-            int play2 = scan.nextInt();
+            int play2 = scan.nextInt(); 
 
             if (play2 == 1) {
                 ran2 = (int) (Math.random() * 26);
