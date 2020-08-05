@@ -41,6 +41,7 @@ public class Cards {
     public void setVal(Value val) {
         this.val = val;
     }
+    @Override
     public String toString(){
         return s+" "+val;
     } 
