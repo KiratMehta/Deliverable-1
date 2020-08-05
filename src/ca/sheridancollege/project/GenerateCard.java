@@ -2,7 +2,7 @@
  * Group: Kirat Mehta, Gurjit Singh, Jagdeep Singh, Parminder Kaur Puri
  * 1205_11047 - Fundamentals of Software Design and Development
  * Project name :- Card Game
- * Date July 2020
+ * Date August 2020
  */
 package ca.sheridancollege.project;
 
