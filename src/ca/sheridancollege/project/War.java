@@ -50,7 +50,7 @@ public class War {
         int instruct = scan.nextInt();
         do {
             if (instruct == 1) {
-                System.out.println(ch.Instructions());
+                System.out.println(reg.Instructions());
             }
 
             System.out.println(P1 + "'s chance! To pick a card press 1 or any other number to end game");

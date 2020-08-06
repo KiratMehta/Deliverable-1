@@ -15,6 +15,5 @@ public abstract class Generate {
     
     public abstract void generateCard1();
     
-    public abstract String Instructions();
     
 }

@@ -76,6 +76,14 @@ public class Register {
         this.player2ID = player2ID;
     }
     
+     
+    public String Instructions(){
+        
+        return "----INSTRUCTIONS----\n"+"Two players are allowed to play the game.\n"+
+                "The player with the greatest card wins\n"+"Players will pick a random card from their deck\n";
+        
+        
+    }
     
     
 }
