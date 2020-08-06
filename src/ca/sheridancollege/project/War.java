@@ -48,16 +48,18 @@ public class War {
 
         System.out.println("Do you want to view INSTRUCTIONS (if yes press 1 else any other number to continue)");
         int instruct = scan.nextInt();
-        do {
-            if (instruct == 1) {
+         if (instruct == 1) {
                 System.out.println(reg.Instructions());
             }
 
+        do {
+            
+           
             System.out.println(P1 + "'s chance! To pick a card press 1 or any other number to end game");
             int play = scan.nextInt();
 
             if (play == 1) {
-                ran = (int) (Math.random() * 26);
+                ran = ch.ShuffleDeck1();
                 System.out.println(P1 + " card: " + ch.generate[ran]);
 
             } else {
@@ -69,7 +71,7 @@ public class War {
             int play2 = scan.nextInt();
 
             if (play2 == 1) {
-                ran2 = (int) (Math.random() * 26);
+                ran2 = ch2.ShuffleDeck2();
 
                 System.out.println(P2 + " card: " + ch2.generate2[ran2]);
 

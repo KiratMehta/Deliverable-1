@@ -15,5 +15,8 @@ public abstract class Generate {
     
     public abstract void generateCard1();
     
+    public abstract int ShuffleDeck1();
+    
+    public abstract int ShuffleDeck2();
     
 }

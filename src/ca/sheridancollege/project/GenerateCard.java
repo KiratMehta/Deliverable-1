@@ -38,7 +38,21 @@ public class GenerateCard extends Generate
             }
         }
     }
-
+        @Override
+     public int ShuffleDeck1(){
+         int shuffle1=0;
+         shuffle1=(int) (Math.random() * 26);
+         return shuffle1;
+     }
+        @Override
+     public int ShuffleDeck2(){
+         int shuffle2=0;
+         shuffle2=(int) (Math.random() * 26);
+         return shuffle2;
+         
+     }
+     
+     
   
    
 }
