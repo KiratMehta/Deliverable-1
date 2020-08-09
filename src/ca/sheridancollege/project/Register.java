@@ -10,7 +10,7 @@ package ca.sheridancollege.project;
  * @author ASUS
  */
 public class Register {
-    
+                                                                                    //ENCAPSULATION
     private String player1Name,player2Name;
     private int player1ID,player2ID;
 
@@ -24,21 +24,21 @@ public class Register {
     /**
      * @param player1Name the player1Name to set
      */
-    public void setPlayer1Name(String player1Name) {
+    public void setPlayer1Name(String player1Name) {            //setting player1 name
         this.player1Name = player1Name;
     }
 
     /**
      * @return the player2Name
      */
-    public String getPlayer2Name() {
+    public String getPlayer2Name() {                            
         return player2Name;
     }
 
     /**
      * @param player2Name the player2Name to set
      */
-    public void setPlayer2Name(String player2Name) {
+    public void setPlayer2Name(String player2Name) {            //setting player2 name
         this.player2Name = player2Name;
     }
 
@@ -53,7 +53,7 @@ public class Register {
     /**
      * @param player1ID the player1ID to set
      */
-    public void setPlayer1ID(int player1ID) {
+    public void setPlayer1ID(int player1ID) {                           //setting player ID    
         
        
         this.player1ID = player1ID;
@@ -63,7 +63,7 @@ public class Register {
      * @return the player2ID
      */
     public int getPlayer2ID() {
-       player2ID=(int) (Math.random() * 1000000);
+       player2ID=(int) (Math.random() * 1000000);                        //setting player ID
         return player2ID;
     }
 
@@ -77,10 +77,10 @@ public class Register {
     }
     
      
-    public String Instructions(){
+    public String Instructions(){                       //Providing the instructions
         
         return "----INSTRUCTIONS----\n"+"Two players are allowed to play the game.\n"+
-                "The player with the greatest card wins\n"+"Players will pick a random card from their deck\n";
+                "The player with the greatest card wins\n"+"Players will pick a random card from their deck by entering a number 1\n";
         
         
     }

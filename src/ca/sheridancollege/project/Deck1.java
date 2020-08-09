@@ -4,13 +4,13 @@
  * Group: Kirat Mehta, Gurjit Singh, Jagdeep Singh, Parminder Kaur Puri
  * 1205_11047 - Fundamentals of Software Design and Development
  * Project name :- Card Game
- * Date August 2020
+ * Date 08 August 2020
  */
 package ca.sheridancollege.project;
 
 
 public class Deck1 {
-    //public enum Directions{East,west,north,south};
+    //encapsulation for deck2 that contains remaining 26 cards
     public enum Suit {hearts,diamonds};//predefined set of constants, userdefined data type
     
     public enum Value
@@ -31,14 +31,14 @@ public class Deck1 {
         return s;
     }
 
-    public void setS(Suit s) {
+    public void setS(Suit s) {                       //setting enum(Suit) value
         this.s = s;
     }
     public Value getVal() {
         return val;
     }
 
-    public void setVal(Value val) {
+    public void setVal(Value val) {                 //setting enum(Value) value
         this.val = val;
     }
     @Override

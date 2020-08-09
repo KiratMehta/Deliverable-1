@@ -11,6 +11,7 @@ package ca.sheridancollege.project;
  */
 public abstract class Generate {
     
+    //abstract class contains abstract methods 
     public abstract void generateCard();
     
     public abstract void generateCard1();

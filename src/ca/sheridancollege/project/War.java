@@ -3,7 +3,7 @@
  * Group: Kirat Mehta, Gurjit Singh, Jagdeep Singh, Parminder Kaur Puri
  * 1205_11047 - Fundamentals of Software Design and Development
  * Project name :- Card Game
- * Date August 2020
+ * Date 08 August 2020
  */
 package ca.sheridancollege.project;
 
@@ -24,21 +24,21 @@ public class War {
         int player1Score = 0;
         int player2Score = 0;
 
-        GenerateCard ch = new GenerateCard();
-        ch.generateCard();
+        GenerateCard ch = new GenerateCard();   //create object 'ch' of gerateCard class
+        ch.generateCard();                      // calling method to generate Deck1 of 26 cards
 
         GenerateCard ch2 = new GenerateCard();
-        ch2.generateCard1();
+        ch2.generateCard1();                    // calling method to generate Deck2 of 26 cards
 
-        Register reg = new Register();
+        Register reg = new Register();          //create object of register class
 
         System.out.println("Register the players\nEnter Player1 name:");
-        String Pl1 = scan.nextLine();
+        String Pl1 = scan.nextLine();           //taking player1 name
         reg.setPlayer1Name(Pl1);
 
         System.out.println("Enter Player2 name:");
-        String Pl2 = scan.nextLine();
-        reg.setPlayer2Name(Pl2);
+        String Pl2 = scan.nextLine();           
+        reg.setPlayer2Name(Pl2);                //taking player2 name
 
         String P1 = reg.getPlayer1Name();
         String P2 = reg.getPlayer2Name();
@@ -59,7 +59,7 @@ public class War {
             int play = scan.nextInt();
 
             if (play == 1) {
-                ran = ch.ShuffleDeck1();
+                ran = ch.ShuffleDeck1();                //picking 1 card from deck1 for player2
                 System.out.println(P1 + " card: " + ch.generate[ran]);
 
             } else {
@@ -71,7 +71,7 @@ public class War {
             int play2 = scan.nextInt();
 
             if (play2 == 1) {
-                ran2 = ch2.ShuffleDeck2();
+                ran2 = ch2.ShuffleDeck2();          //picking 1 card from deck2 for player2
 
                 System.out.println(P2 + " card: " + ch2.generate2[ran2]);
 
@@ -125,7 +125,7 @@ public class War {
 
         System.out.println();
 
-        System.out.println("Final score---> ");
+        System.out.println("Final score---> ");             //Declaring the winner with final score
         if (player1Score > player2Score) {
             System.out.println(P1 + " Won");
         } else if (player2Score == player1Score) {

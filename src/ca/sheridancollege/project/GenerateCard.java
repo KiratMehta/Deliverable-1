@@ -11,7 +11,7 @@ public class GenerateCard extends Generate
         int deck=26;
         Deck1 generate[] = new Deck1[deck];   //26 cards
         @Override
-    public void generateCard()
+    public void generateCard()              //implementaion of generateCard method
     {
         int counter=0;
         for( Deck1.Suit s: Deck1.Suit.values())//enhanced for loop - index value not needed
@@ -25,7 +25,7 @@ public class GenerateCard extends Generate
     }
     Deck2 generate2[]=new Deck2[deck];
         @Override
-     public void generateCard1()
+     public void generateCard1()            //implementaion of generateCard1 method
     {
         
         int counter=0;
